@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import WithFadeWhenInView from './components/withFadeInWhenInView/withFadeInWhenInView';
 
-import Header from './components/header/Header';
+
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div 
+      className="App"
+      style={{
+        height:`2000px`
+      }}
+    >
+      <WithFadeWhenInView width={10}/>
     </div>
   );
 }
